@@ -29,10 +29,6 @@ This repository is organized into two folders:
        and extract the desired graph. All the actual data processing
        occurs here.
 
-Notice that the `scripts/process_data.sh` script will download the
-required DBpedia data into the `raw/` directory. This is done via the
-`raw/download_files.sh` script (requires [`curl`][3]).
-
 Usage
 -----
 
@@ -84,6 +80,7 @@ The `scripts/process_data.awk` file will output four files:
 Notes
 -----
 
+* The `raw/download_files.sh` script requires [`curl`][3].
 * By default, the 3.9 release of DBpedia will be used (current as of
   this release). If desired, this can be overridden by modifying the
   `DBPEDIA_VERSION` variable in `raw/download_files.sh`.
