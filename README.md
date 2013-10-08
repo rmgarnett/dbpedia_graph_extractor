@@ -40,7 +40,7 @@ Usage
 The process of creating a new graph is simple:
 
 1. Create a file containing the DBpedia ontology types desired. An
-   example has been provided in `scripts/ontology_types.example`:
+   example has been provided in `ontology_types.example`:
 
         <http://dbpedia.org/ontology/AdministrativeRegion>
         <http://dbpedia.org/ontology/Country>
