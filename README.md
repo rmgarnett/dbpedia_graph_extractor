@@ -44,7 +44,7 @@ The process of creating a new graph is simple:
         <http://dbpedia.org/ontology/Village>
 
    These correspond to the types used to create the "populated places"
-   dataset in the following paper:
+   datasets in the following paper:
    > Neumann, M., Garnett, R., and Kersting, K. Coinciding Walk
    > Kernels: Parallel Absorbing Random Walks for Learning with Graphs
    > and Few Labels. (2013). To appear in: Proceedings of the 5th
