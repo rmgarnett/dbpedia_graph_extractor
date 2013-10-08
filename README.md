@@ -36,13 +36,11 @@ The process of creating a new graph is simple:
 
 1. Create a file containing the DBpedia ontology types desired. An
    example has been provided in `ontology_types.example`:
-
         <http://dbpedia.org/ontology/AdministrativeRegion>
         <http://dbpedia.org/ontology/Country>
         <http://dbpedia.org/ontology/City>
         <http://dbpedia.org/ontology/Town>
         <http://dbpedia.org/ontology/Village>
-
    These correspond to the types used to create the "populated places"
    dataset in the following paper:
    > Neumann, M., Garnett, R., and Kersting, K. Coinciding Walk
@@ -63,18 +61,15 @@ The `scripts/process_data.awk` file will output four files:
 
 * `edge_list`: A list of edges corresponding to Wikipedia page links
      between the extracted nodes.
-
      Format: `[from node id]` `[to node id]`
 * `labels`: A list of integer labels associated with the extracted
      nodes. The _i_th line of this file is the label associated with
      node id _i_.
 * `label_ids_to_labels`: A map from created integer label ids to the
      provided ontology types.
-
      Format: `[label id]` `[ontology type name]`
 * `node_ids_to_names`: A map from created node ids to the
      corresponding DBpedia resource names.
-
      Format: `[node id]` `[DBpedia resource name]`
 
 Notes
@@ -89,7 +84,6 @@ Notes
   multiple datasets to be created without having to download the
   files again. These files are rather large, however, and you
   might want to remove them when you're done:
-
         rm raw/*.bz2
 * The DBpedia datasets used are dual-licensed under the
   [Creative Commons Attribution-ShareAlike 3.0 License][4] (CC BY-SA
