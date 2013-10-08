@@ -86,7 +86,7 @@ Notes
   `DBPEDIA_VERSION` variable in `raw/download_files.sh`.
 * The required DBpedia files will be downloaded to the `raw`
   directory. These files are not deleted by default, to enable
-  multiple datasets to be created without having to download the
+  the creation of multiple graphs without having to download the
   files again. These files are rather large, however, and you
   might want to remove them when you're done.
 * The DBpedia datasets used are dual-licensed under the
