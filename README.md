@@ -36,11 +36,13 @@ The process of creating a new graph is simple:
 
 1. Create a file containing the DBpedia ontology types desired. An
    example has been provided in `ontology_types.example`:
+
         <http://dbpedia.org/ontology/AdministrativeRegion>
         <http://dbpedia.org/ontology/Country>
         <http://dbpedia.org/ontology/City>
         <http://dbpedia.org/ontology/Town>
         <http://dbpedia.org/ontology/Village>
+
    These correspond to the types used to create the "populated places"
    dataset in the following paper:
    > Neumann, M., Garnett, R., and Kersting, K. Coinciding Walk
@@ -84,6 +86,7 @@ Notes
   multiple datasets to be created without having to download the
   files again. These files are rather large, however, and you
   might want to remove them when you're done:
+
         rm raw/*.bz2
 * The DBpedia datasets used are dual-licensed under the
   [Creative Commons Attribution-ShareAlike 3.0 License][4] (CC BY-SA
