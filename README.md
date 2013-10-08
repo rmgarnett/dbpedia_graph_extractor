@@ -105,7 +105,7 @@ Notes
   the license of your choice. The code itself is licensed under the
   MIT license (see `LICENSE` for the full text).
 
-Copyright (c) Roman Garnett (romangarnett@gmail.com), 2013
+Copyright (c) 2013, Roman Garnett (romangarnett@gmail.com)
 
 [1]: http://dbpedia.org/
 [2]: http://mappings.dbpedia.org/server/ontology/classes/

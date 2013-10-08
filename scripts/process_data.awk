@@ -46,7 +46,7 @@
 #
 #       Format: [from node id] [to node id]
 #
-# Copyright (c) Roman Garnett (romangarnett@gmail.com), 2013.
+# Copyright (c) 2013, Roman Garnett (romangarnett@gmail.com)
 
 # maintain variable containing ordinal number of current file in list
 (FNR == 1) { file_number++ }
