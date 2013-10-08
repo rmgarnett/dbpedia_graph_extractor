@@ -2,7 +2,7 @@
 # ontology types. This script expects the following three files to be
 # passed in, in the following order:
 #
-#   - A list of DBpedia ontology types to select. Any DBpedia resource
+#   * A list of DBpedia ontology types to select. Any DBpedia resource
 #     belonging to at least one of these types according to the
 #     DBpedia "mapping-based types" relations will be selected as a
 #     node in the created graph. Example content:
@@ -13,38 +13,38 @@
 #       <http://dbpedia.org/ontology/Town>
 #       <http://dbpedia.org/ontology/Village>
 #
-#   - A list of "mapping-based types" relations from DBpedia in Turtle
+#   * A list of "mapping-based types" relations from DBpedia in Turtle
 #     ("TTL") format. Example:
 #
 #       http://downloads.dbpedia.org/3.9/en/instance_types_en.ttl.bz2
 #
-#   - A list of "Wikipedia pagelinks" relations from DBpedia in Turtle
+#   * A list of "Wikipedia pagelinks" relations from DBpedia in Turtle
 #     ("TTL") format. Example:
 #
 #       http://downloads.dbpedia.org/3.9/en/page_links_en.ttl.bz2
 #
 # This script will create four files:
 #
-#   - A map from created integer label ids to the provided ontology
+#   * A map from created integer label ids to the provided ontology
 #     types. Written to the file specified by the variable
 #     label_index_file.
 #
-#       Format: [label id] [ontology type name]
+#     Format: [label id] [ontology type name]
 #
-#   - A map from created node ids to the corresponding DBpedia
+#   * A map from created node ids to the corresponding DBpedia
 #     resource names. Written to the file specified by the variable
 #     node_id_index_file.
 #
-#       Format: [node id] [DBpedia resource name]
+#     Format: [node id] [DBpedia resource name]
 #
-#   - A list of integer labels associated with the extracted nodes.
+#   * A list of integer labels associated with the extracted nodes.
 #     The ith line of this file is the label associated with node id
 #     i. Written to the file specified by the variable labels_file.
 #
-#   - A list of edges corresponding to Wikipedia page links between
+#   * A list of edges corresponding to Wikipedia page links between
 #     the extracted nodes. Written to stdout.
 #
-#       Format: [from node id] [to node id]
+#     Format: [from node id] [to node id]
 #
 # Copyright (c) 2013, Roman Garnett (romangarnett@gmail.com)
 
