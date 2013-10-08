@@ -22,7 +22,6 @@ This repository is organized into two folders:
      from DBpedia (`download_files.sh`).
 * `scripts/`: Contains scripts for processing downloaded DBpedia files
      to extract desired graph:
-
   * `process_data.sh`: A `bash` script that (if required) downloads
        required files from DBpedia, decompresses them via Unix named
        pipes, and calls the `awk` script below.
@@ -54,14 +53,11 @@ The process of creating a new graph is simple:
    > Kernels: Parallel Absorbing Random Walks for Learning with Graphs
    > and Few Labels. (2013). To appear in: Proceedings of the 5th
    > Annual Asian Conference on Machine Learning (ACML 2013).
-
 2. Edit the `scripts/process_data.sh` file and edit the following
    variables (defined at the top of the file), if desired:
-
-   * `PROCESSED_DIRECTORY`: Where to store the created graph.
-   * `ONTOLOGY_TYPES_FILE`: A list of the DBpedia ontology types to
-        use.
-
+       * `PROCESSED_DIRECTORY`: Where to store the created graph.
+       * `ONTOLOGY_TYPES_FILE`: A list of the DBpedia ontology types
+            to use.
 3. Run the `scripts/process_data.sh` script.
 
 Output
