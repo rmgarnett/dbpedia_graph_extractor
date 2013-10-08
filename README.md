@@ -88,9 +88,7 @@ Notes
   directory. These files are not deleted by default, to enable
   multiple datasets to be created without having to download the
   files again. These files are rather large, however, and you
-  might want to remove them when you're done:
-
-        rm raw/*.bz2
+  might want to remove them when you're done.
 * The DBpedia datasets used are dual-licensed under the
   [Creative Commons Attribution-ShareAlike 3.0 License][4] (CC BY-SA
   3.0) and the [GNU Free Documentation License][5]. Using this tool
